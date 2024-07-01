@@ -1,0 +1,30 @@
+.pelicula {
+    position: relative;
+    width: 300px;
+    margin: 20px;
+    transition: transform 0.2s;
+  }
+  
+  .pelicula:hover {
+    transform: scale(1.05);
+  }
+  
+  .pelicula img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .descripcion {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .pelicula:hover .descripcion {
+    display: block;
+  }
+  

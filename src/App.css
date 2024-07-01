@@ -1,0 +1,89 @@
+.home-container {
+  text-align: center;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  background-color: #282c34;
+  padding: 10px;
+  color: white;
+}
+
+.menu-icon {
+  width: 30px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.title {
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.pelicula {
+  position: relative;
+  margin: 10px;
+}
+
+.bottom-image {
+  width: 200px;
+  height: auto;
+}
+
+.hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.peliculas-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pelicula {
+  position: relative;
+  width: 300px;
+  margin: 20px;
+  transition: transform 0.2s;
+}
+
+.pelicula:hover {
+  transform: scale(1.05);
+}
+
+.pelicula img {
+  width: 100%;
+  height: auto;
+}
+
+.descripcion {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  width: 100%;
+  padding: 10px;
+}
+
+.pelicula:hover .descripcion {
+  display: block;
+}
